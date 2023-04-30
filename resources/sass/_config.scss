@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+@import './_variables';
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+
+    @media  screen and (max-width: 1024px) {
+        font-size: 2.2rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    @media  screen and (max-width: 1024px) {
+        font-size: 1.7rem;
+    }
+}
+
+h3 {
+   font-size: 1.6rem; 
+   font-weight: 600;
+   @media  screen and (max-width: 1024px) {
+    font-size: 1.4rem;
+}
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    @media  screen and (max-width: 1024px) {
+        font-size: 1.2rem;
+    }
+}
+
+p{
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+a {
+    color: black;
+    cursor: pointer;
+}
+
+section {
+    padding: 6rem 0;
+    overflow: hidden;
+    position: relative;
+
+    @media screen and (max-width: 1024px){
+        height: 150vh !important;
+       }
+
+    @media screen and (max-width: 880px){
+        height: max-content !important;
+       }
+    
+    @media screen and (max-width: 600px){
+        height: max-content !important;
+        }
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+  
+}
+
+.main-container {
+   margin: 0 auto;
+   width: $container-width-lg;
+
+   .heading {
+    width: 60%;
+    gap: 1.5rem;
+    text-align: center;
+
+    @media screen and (max-width: 1024px){
+        width: 80%;
+       }
+    
+        @media screen and (max-width: 600px){
+        width: 90%;
+        }
+
+    small {
+       color: $main-color;
+    }
+
+    h2 span {
+       color: $main-color;
+    }
+   }
+
+   @media screen and (max-width: 1024px){
+    width: $container-width-md;
+   }
+
+    @media screen and (max-width: 600px){
+        width: $container-width-sm;
+    }
+
+
+
+}
+
+.d-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+ 
+}
+
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.df-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.df-align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-bar {
+    background: $white-color;
+    cursor: pointer;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    padding: 10px;
+
+    display: none;
+    background-color: $main-color;
+    color: $white-color;
+
+    @media screen and (max-width: 1024px){
+        
+        display: block;
+    }
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(150px);
+    -webkit-transform: translateY(150px);
+    -moz-transform: translateY(150px);
+    -ms-transform: translateY(150px);
+    -o-transform: translateY(150px);
+    transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+}
+
+.activeReveal {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}
